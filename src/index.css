@@ -1,0 +1,41 @@
+/* src/index.css */
+/* Importa tus fuentes o estilos globales si es necesario */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos generales para la aplicación */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7fafc; /* Color de fondo para el modo claro */
+  color: #333; /* Color de texto para el modo claro */
+}
+
+/* Estilos específicos para dark mode */
+.dark {
+  background-color: #1a202c; /* Color de fondo para el modo oscuro */
+  color: #f7fafc; /* Color de texto para el modo oscuro */
+}
+
+/* Estilos para el componente Header */
+/* Puedes agregar estilos específicos para el encabezado aquí */
+header {
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+button {
+  cursor: pointer;
+}

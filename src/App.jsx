@@ -1,5 +1,4 @@
 
-import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import AboutMe from './pages/AboutMe'
@@ -8,11 +7,16 @@ import Experience from './pages/Experience'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Header from './layout/Header'
+import { useState } from 'react'
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
+  const handleDarkModeToggle = () => {
+    setIsDarkMode(!isDarkMode);
+  };
   return (
-    <div className="App">
-      < Header />
+    <div className={`min-h-screen ${isDarkMode ? 'dark' : 'light'}`}>
+      < Header handleDarkModeToggle={handleDarkModeToggle} isDarkMode={isDarkMode} />
       <Routes >
         <Route path='/' element={<Home />} />
         <Route path='/aboutme' element={<AboutMe />} />
