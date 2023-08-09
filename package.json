@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "postcss src/styles.css --output src/css/styles.css",
-    "watch": "postcss src/styles.css --output src/css/styles.css --watch"
+    "build": "vite build"
   },
   "dependencies": {
     "i18next": "^23.2.11",

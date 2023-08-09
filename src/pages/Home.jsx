@@ -27,8 +27,8 @@ const Home = () => {
      <div className="home_content">
       <h1 className="home_title">{t('hometitile')}</h1>
       <p className="home_description">{t('homecontent')}</p>
-      <img className='background-image' src="/public/desktop-removebg-preview.png" alt="tegnologuias dijitales" />
-      <img className='background-image_2' src="/public/nube-removebg-preview.png" alt="tegnologias en la nuve" />
+      <img className='background-image' src="/desktop-removebg-preview.png"  />
+      <img className='background-image_2' src="/nube-removebg-preview.png"  />
     <button
       className="mi-boton-genial"
       onClick={handleDownload}
