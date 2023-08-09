@@ -13,7 +13,7 @@ const MySkills = () => {
                 <div>
                 <i className="fa-brands fa-js fa-beat js" ></i>
                 <i className="fa-brands fa-react fa-spin fa-spin-reverse re" ></i>
-                <i class="fa-brands fa-node node"></i>
+                <i className="fa-brands fa-node node"></i>
                 </div>
             </div>
             <section>
