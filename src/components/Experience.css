@@ -1,0 +1,70 @@
+/* Estilos para el contenido de experiencia */
+
+.espe_content {
+    display: grid; /* Aplicamos display grid para el contenedor de secciones */
+    grid-gap: 10px;
+    grid-template-areas:
+      'espe_principal espe_secundario'
+      ; /* Definimos las áreas para las secciones */
+  }
+  
+  /* Estilos para cada sección */
+  .expe section {
+    max-width: 500px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    
+  }
+  .dark .expe section {
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Estilos para los títulos de sección */
+  .expe section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    
+  }
+  
+  /* Estilos para los subtítulos de sección */
+  .expe section h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #7e7e7e;
+  }
+  
+  /* Estilos para los párrafos de sección */
+  .expe section p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  /* Asignar áreas para cada sección */
+  .espe_principal {
+    grid-area: espe_principal;
+    margin-left: 35px;
+  }
+  
+  .espe_secundario {
+    grid-area: espe_secundario;
+  }
+  
+  .espe_ultimo {
+    margin-top: 20px;
+    margin-left: 35px;
+    max-width: 1122px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  h3{
+display: flex;
+justify-content: center;
+
+  }
+   
+  .dark .espe_ultimo {
+
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+    
+  }

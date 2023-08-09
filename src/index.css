@@ -1,17 +1,15 @@
-/* src/index.css */
-/* Importa tus fuentes o estilos globales si es necesario */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Estilos generales para la aplicación */
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #f7fafc; /* Color de fondo para el modo claro */
-  color: #333; /* Color de texto para el modo claro */
+  background-color: rgb(227, 227, 227); /* Color de fondo para el modo claro */
+  color: #181818; /* Color de texto para el modo claro */
 }
 
 /* Estilos específicos para dark mode */
 .dark {
-  background-color: #1a202c; /* Color de fondo para el modo oscuro */
+  background-color: rgb(6, 3, 3); /* Color de fondo para el modo oscuro */
   color: #f7fafc; /* Color de texto para el modo oscuro */
 }
 
@@ -33,9 +31,42 @@ li {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: rgb(33, 33, 33);
+}
+.dark a {
+  color: rgb(196, 196, 196);
 }
 
-button {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.home_content, .about_content, .contact_content, .espe_content, .skill_content, .proy_content {
+  animation: fadeIn 0.8s ease-out;
+}
+.mi-boton-genial {
+  border-radius: 0.25rem;
+   background-color: #eaebed;
+   border: none;
+  margin-left: 10px;
+  color: #0e1116;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.dark .mi-boton-genial {
+  background-color: #0b0e0e;
+  color: #f7fafc;
+}
+/* Estilos al pasar el cursor por encima */
+.mi-boton-genial:hover {
+  background-color: #c5c5c5;
+}
+
+.dark .mi-boton-genial:hover {
+  background-color: #222020;
 }

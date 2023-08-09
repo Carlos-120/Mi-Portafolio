@@ -1,0 +1,82 @@
+.skill{    
+    height:500px;
+}
+/* Estilos para el contenedor principal de habilidades */
+.skill {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  /* Estilos para el título de habilidades */
+  .skill_title {
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+  
+  /* Estilos para el contenedor de íconos */
+  .skill_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  /* Estilos para los íconos */
+  .skill_content i {
+    font-size: 90px;
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .js{
+    color: #f0db4f;
+  }
+  .re{
+    color: #61dafb;
+  }
+  .node{
+    color: #8cc84b;
+  }
+  
+  .skill_content i:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+  }
+  .dark .skill_content i:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(255, 255, 255, 0.337);
+  }
+  /* Estilos para la lista de habilidades */
+  .skill section {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  /* Estilos para los elementos de la lista de habilidades */
+  .skill section li {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #777;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0; /* Comienza con ancho cero para que parezca que no hay texto */
+    }
+    to {
+      width: 100%; /* Llega al ancho completo mostrando todo el texto */
+    }
+  }
+  
+  /* Aplica la animación "typewriter" al párrafo con la clase .typewriter-text */
+  .skill section li {
+    overflow: hidden; /* Oculta el texto que sale del contenedor */
+    white-space: nowrap;
+    animation: typewriter 4s steps(50) forwards; /* 4s es la duración de la animación */
+    /* "steps(40)" dividirá la animación en 40 pasos, ajusta este número según desees */
+  }
+

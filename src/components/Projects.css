@@ -1,0 +1,99 @@
+/* CSS */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para la sección de proyectos */
+  .proy {
+    text-align: center;
+  }
+  
+  .proy_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .proy_content_hijo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  /* Estilos para cada artículo (proyecto) */
+  article {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  
+  /* Estilos para las imágenes de los proyectos */
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para las descripciones de los proyectos */
+  p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  /* Estilos para los botones */
+  button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para el botón "Detalles" */
+  .details-button {
+    background-color: #ff5722;
+  }
+  
+  /* Estilos para la responsividad */
+  @media (min-width: 576px) {
+    .proy_content_hijo {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    article {
+      max-width: 400px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      padding: 40px;
+    }
+    
+    .proy_title {
+      font-size: 32px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    article {
+      max-width: 500px;
+    }
+  }
+  

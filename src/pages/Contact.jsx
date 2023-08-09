@@ -5,8 +5,10 @@ const Contact = () => {
     const { t } = useTranslation();
 
     return (
-        <div>
-            Contact
+        <div className='contact'>
+            <div className='contact_content'>
+                correo  telefono , links de redes etc.
+            </div>
         </div>
     )
 }
