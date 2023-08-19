@@ -59,4 +59,18 @@
     animation: typewriter 4s steps(70) forwards; /* 4s es la duración de la animación */
     /* "steps(40)" dividirá la animación en 40 pasos, ajusta este número según desees */
   }
-  
+  @media (max-width: 577px){
+
+  }
+  @media (min-width:577px) and ( max-width: 768px){
+
+  }
+  @media (min-width: 768px) and (max-width: 992px){
+
+  }
+  @media (min-width: 992px)and (max-width: 1200px){
+
+  }
+  @media (min-width: 1200px) {
+    
+  }

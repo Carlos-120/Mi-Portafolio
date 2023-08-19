@@ -50,10 +50,8 @@ a {
 }
 .mi-boton-genial {
   border-radius: 0.25rem;
-   background-color: #eaebed;
    border: none;
   margin-left: 10px;
-  color: #0e1116;
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -64,7 +62,7 @@ a {
 }
 /* Estilos al pasar el cursor por encima */
 .mi-boton-genial:hover {
-  background-color: #c5c5c5;
+  background-color: #4772d0;
 }
 
 .dark .mi-boton-genial:hover {
