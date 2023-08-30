@@ -1,15 +1,13 @@
 .skill{    
-    height:500px;
+    height: 100vh;
 }
 /* Estilos para el contenedor principal de habilidades */
 .skill {
     text-align: center;
-    margin: 20px;
   }
   
   /* Estilos para el título de habilidades */
   .skill_title {
-    font-size: 24px;
     font-weight: bold;
     
   }
@@ -24,9 +22,6 @@
   
   /* Estilos para los íconos */
   .skill_content i {
-    font-size: 90px;
-    padding: 20px;
-    margin: 20px;
     transition: transform 0.3s ease-in-out;
   }
   .js{
@@ -59,7 +54,6 @@
   
   /* Estilos para los elementos de la lista de habilidades */
   .skill section li {
-    font-size: 18px;
     margin: 5px 0;
     color: #777;
   }
@@ -81,17 +75,140 @@
   }
 
   @media (max-width: 577px){
+    .skill_title {
+      margin-top: 120px;
+      font-weight: bold;
+    }
+    
+    .skill_content i {
+      font-size: 60px;
+      padding: 20px;
+      margin: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .skill section {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
 
+    .skill section li {
+      font-size: 13px;
+      margin: 5px 0;
+      
+    }
   }
   @media (min-width:577px) and ( max-width: 768px){
+    .skill_title {
+      margin-top: 120px;
+      font-weight: bold;
+      
+    }
+    
+    .skill_content i {
+      font-size: 70px;
+      padding: 20px;
+      margin: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .skill section {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
 
+    .skill section li {
+      font-size: 14px;
+      margin: 5px 0;
+      
+    }
   }
   @media (min-width: 768px) and (max-width: 992px){
+    .skill_title {
+      margin-top: 120px;
+      font-weight: bold;
+      
+    }
+    
+    .skill_content i {
+      font-size: 100px;
+      padding: 20px;
+      margin: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .skill section {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
 
+    .skill section li {
+      font-size: 15px;
+      margin: 5px 0;
+      
+    }
   }
   @media (min-width: 992px)and (max-width: 1200px){
+    .skill_title {
+      margin-top: 120px;
+      font-weight: bold;
+      
+    }
+    
+    .skill_content i {
+      font-size: 120px;
+      padding: 20px;
+      margin: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .skill section {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
 
+    .skill section li {
+      font-size: 20px;
+      margin: 5px 0;
+      
+    }
   }
   @media (min-width: 1200px) {
+    .skill_title {
+      font-weight: bold;
+      
+    }
     
+    .skill_content i {
+      font-size: 120px;
+      padding: 20px;
+      margin: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .skill section {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+
+    .skill section li {
+      font-size: 19px;
+      margin: 5px 0;
+      
+    }
   }

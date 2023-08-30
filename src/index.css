@@ -13,11 +13,6 @@ body {
   color: #f7fafc; /* Color de texto para el modo oscuro */
 }
 
-/* Estilos para el componente Header */
-/* Puedes agregar estilos específicos para el encabezado aquí */
-header {
-  padding: 20px;
-}
 
 ul {
   list-style: none;

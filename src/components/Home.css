@@ -3,20 +3,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+
+    @media screen and (max-width: 100%) {
+      max-width: 90%; 
+      font-size: 14px; 
+      margin: 0.5rem auto; 
+    }
+
+  }
+  .dark .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh; /* Esto asegurará que el div se extienda por toda la altura de la ventana */
   }
   
-  .home_title{
-    margin-top: -220px;
-    padding-bottom: 15px;
-  }
   
   .home_content {
     text-align: center;
     line-height: 1.5;
    
   }
-  
+
  
   
   @keyframes revealImage {
@@ -31,15 +40,23 @@
   }
 
   
-  .home_description{
-    width: 700px;
+  .home_description {
+    max-width: 80%; /* Ancho máximo para pantallas grandes */
+    margin: 1rem auto;
     height: 100px;
-    z-index: 1;
-    
+    z-index: 1; /* Centrado horizontal con margen superior e inferior */
+  
+    /* Aplicar estilos específicos para pantallas más pequeñas usando media queries */
+    @media screen and (max-width: 100%) {
+      max-width: 90%; /* Reducir el ancho máximo para pantallas más pequeñas */
+      font-size: 14px; /* Reducir el tamaño de fuente para mejor legibilidad */
+      margin: 0.5rem auto; /* Ajustar el margen en pantallas pequeñas */
+    }
   }
+  
   @media (max-width: 577px){
     .home_title{
-      margin-top: -220px;
+      margin-top: -320px;
       padding-bottom: 15px;
     }
     
@@ -50,7 +67,15 @@
     }
     .background-image {
       position: absolute;
-      top: 800px; 
+      top: 650px; 
+      left: 80px; 
+      width: 270px; 
+      height: 180px; 
+      object-fit: cover;
+    }
+    .dark .background-image {
+      position: absolute;
+      top: 650px; 
       left: 80px; 
       width: 270px; 
       height: 180px; 
@@ -59,57 +84,80 @@
     .background-image_2 {
       position: absolute;
       top: 156px; 
+      left: 357px; 
+      width: 220px; 
+      height: 180px; 
+      object-fit: cover;
+    }
+    .dark .background-image_2 {
+      position: absolute;
+      top: 156px; 
       left: 260px; 
       width: 220px; 
       height: 180px; 
       object-fit: cover;
     }
-    .home_description{
-      width: 450px;
-      height: 100px;
-      z-index: 1;
-      
-    }
+    
    
   }
   @media (min-width:577px) and ( max-width: 768px){
-
-  }
-  @media (min-width: 768px) and (max-width: 992px){
-
-  }
-  @media (min-width: 992px)and (max-width: 1200px){
-
-  }
-  @media (min-width: 1200px) {
+    .home_title{
+      padding-bottom: 15px;
+    }
+    
+    .home_content {
+      text-align: center;
+      line-height: 1.5;
+     
+    }
+  
     .background-image {
       position: absolute;
-      top: 390px; /* Ajusta la posición vertical de la imagen */
-      left: 50px; /* Ajusta la posición horizontal de la imagen */
-      width: 300px; /* Ajusta el ancho de la imagen */
-      height: 200px; /* Ajusta la altura de la imagen */
-      object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Oculta la imagen con una máscara de recorte */
-    animation: revealImage 1s forwards;
-    animation-delay: 0.2s; /* Ajusta el retraso de la animación */
-    opacity: 0;
+      top: 650px; 
+      left: 80px; 
+      width: 270px; 
+      height: 180px; 
+      object-fit: cover;
     }
-    .background-image:hover {
-      transform: rotateY(180deg); 
-    } 
     .background-image_2 {
       position: absolute;
-      top: 132px; /* Ajusta la posición vertical de la imagen */
-      left: 930px; /* Ajusta la posición horizontal de la imagen */
-      width: 300px; /* Ajusta el ancho de la imagen */
-      height: 200px; /* Ajusta la altura de la imagen */
-      object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Oculta la imagen con una máscara de recorte */
-      animation: revealImage 1s forwards;
-      animation-delay: 0.2s; /* Ajusta el retraso de la animación */
-      opacity: 0;
+      top: 156px; 
+      left: 440px; 
+      width: 220px; 
+      height: 180px; 
+      object-fit: cover;
     }
-    .background-image_2:hover {
-      transform: rotateY(180deg); 
-    } 
+    }
+  
+  @media (min-width: 768px) and (max-width: 992px){
+    .home_title{
+      padding-bottom: 15px;
+    }
+    
+    .home_content {
+      text-align: center;
+      line-height: 1.5;
+     
+    }
+    .home_description{
+      font-size: 20px;
+    }
+   
   }
+  @media (min-width: 992px)and (max-width: 1200px){
+    .home_title{
+      padding-bottom: 15px;
+    }
+    .home_description{
+      font-size: 20px;
+    }
+  }
+  @media (min-width: 1200px){
+    .home_title{
+      margin-top: -00px;
+      padding-bottom: 15px;
+    }
+   
+    
+  }
+  

@@ -1,14 +1,10 @@
-/* CSS */
 
-/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
   
   .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   }
@@ -16,10 +12,17 @@ body {
   /* Estilos para la sección de proyectos */
   .proy {
     text-align: center;
+    height: 100vh;
+
+    @media screen and (max-width: 100%) {
+      max-width: 90%;
+      font-size: 14px;
+      margin: 0.5rem auto;
+    }
+    
   }
   
   .proy_title {
-    font-size: 24px;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
@@ -28,32 +31,63 @@ body {
   .proy_content_hijo {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 15px;
+  }
+   
+  article{
+   margin: 5px;
+    box-shadow: 0 1px 6px 2px rgb(0, 0, 0);
+  }
+  .dark article{
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.377);
+  }
+  .proy_1 {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    height: 200px;
+    background-image: url('rik-and-morty.png');
+    background-size: 98%; /* La imagen se ajustará para caber dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en el contenedor */
+  }
+  .proy_2 {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    height: 200px;
+    background-image: url('pokemos.png');
+    background-size: 98%; /* La imagen se ajustará para caber dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en el contenedor */
+  }
+  .proy_3 {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    height: 200px;
+    background-image: url('app-del-clima.png');
+    background-size: 98%; /* La imagen se ajustará para caber dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en el contenedor */
+  }
+  .proy_4 {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    height: 200px;
+    background-image: url('proyect.png');
+    background-size: 98%; /* La imagen se ajustará para caber dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en el contenedor */
   }
   
-  /* Estilos para cada artículo (proyecto) */
-  article {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-  }
-  
-  /* Estilos para las imágenes de los proyectos */
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  /* Estilos para las descripciones de los proyectos */
   p {
     font-size: 16px;
     color: #777;
   }
   
-  /* Estilos para los botones */
+ 
   button {
     cursor: pointer;
     background-color: #007bff;
@@ -63,25 +97,39 @@ body {
     border-radius: 5px;
   }
   
-  /* Estilos para el botón "Detalles" */
+
   .details-button {
     background-color: #ff5722;
   }
   
-  /* Estilos para la responsividad */
-  @media (min-width: 576px) {
+
+  
+  
+  
+  
+  
+  @media (max-width: 577px){
+    .proy_title {
+      font-size: 20px;
+      margin-top: 100px;
+    }
+    button {
+    margin: 10px;
+    }
+    .proy_detail{
+      height: 200px;
+      background-color: #9dc1daa1;
+    }
+  }
+  @media (min-width:577px) and ( max-width: 768px){
     .proy_content_hijo {
       grid-template-columns: 1fr 1fr;
     }
   }
-  
-  @media (min-width: 768px) {
-    article {
-      max-width: 400px;
+  @media (min-width: 768px) and (max-width: 992px){
+    .proy_content_hijo {
+      grid-template-columns: 1fr 1fr;
     }
-  }
-  
-  @media (min-width: 992px) {
     .container {
       padding: 40px;
     }
@@ -90,25 +138,13 @@ body {
       font-size: 32px;
     }
   }
-  
-  @media (min-width: 1200px) {
-    article {
-      max-width: 500px;
+  @media (min-width: 992px)and (max-width: 1200px){
+    .proy_content_hijo {
+      grid-template-columns: 1fr 1fr;
     }
   }
-  
-  @media (max-width: 577px){
-
-  }
-  @media (min-width:577px) and ( max-width: 768px){
-
-  }
-  @media (min-width: 768px) and (max-width: 992px){
-
-  }
-  @media (min-width: 992px)and (max-width: 1200px){
-
-  }
   @media (min-width: 1200px) {
-    
+    .proy_content_hijo {
+      grid-template-columns: 1fr 1fr;
+    }
   }

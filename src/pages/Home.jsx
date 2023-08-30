@@ -27,8 +27,7 @@ const Home = () => {
      <div className="home_content">
       <h1 className="home_title">{t('hometitile')}</h1>
       <p className="home_description">{t('homecontent')}</p>
-      <img className='background-image' src="/desktop-removebg-preview.png"  />
-      <img className='background-image_2' src="/nube-removebg-preview.png"  />
+     
     <button
       className="mi-boton-genial"
       onClick={handleDownload}

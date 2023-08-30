@@ -1,25 +1,23 @@
-/* CSS */
 
-/* Estilos generales */
 body {
   background-color: #f7fafc;
-  margin: 0;
-  padding: 0;
+
 }
 
 .header {
   background-color: #ececec;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Agrega una sombra suave al header */
-}
 
-/* Estilos para el modo oscuro */
+  @media screen and (max-width: 100%) {
+    max-width: 90%;
+    font-size: 14px;
+    margin: 0.5rem auto;
+  }
+}
 .dark .header {
   background-color: #000000;
-  /* Color de fondo para el modo oscuro */
   color: #ffffff;
-  /* Color de texto para el modo oscuro */
 }
 
 .header_ul {
@@ -30,7 +28,6 @@ body {
 .header_ul_li {
   margin: 10px;
 }
-
 .header_content-btn {
   display: flex;
   flex-direction: column; /* Alinea los botones en columna */
@@ -51,15 +48,12 @@ body {
 /* Estilos para la responsividad */
 @media (max-width: 577px) {
   
-  .header {
-    padding: 0px;    
-  }
   a {
     font-size: 10px;
   }
   .header_ul{
     display: grid;
-    grid-template-columns: repeat(3, 90px);
+    grid-template-columns: repeat(3, 30%);
     margin: 0px;
     padding: -0px;
   }
@@ -96,18 +90,13 @@ body {
 
 @media (min-width: 577px) and (max-width: 768px) {
 
-  .header {
-
-    padding: 0px;
-    width: 100%;
-    
-  }
+  
   a {
-    font-size: 11px;
+    font-size: 13px;
   }
   .header_ul{
     display: grid;
-    grid-template-columns: repeat(3, 160px);
+    grid-template-columns: repeat(4, 25%);
     margin: 2px;
     padding: 1px;
   }
@@ -126,41 +115,38 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around
+    justify-content: space-between
     
   }
   
   /* Estilos para los botones */
   .mi-boton-genial {
-    width: 60px;
+    width: 120px;
     height: 40px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    font-size: 9px;
+    font-size: 12px;
     
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   
-  .header {
-    
-    padding: 0px;
-    width: 100% ;
-    }
+
+   
   a {
-    font-size: 13px;
+    font-size: 17px;
   }
   .header_ul{
    display: flex;
     margin: 0px;
-    padding: 5px;
+    
   }
   .header_ul {
-    margin-left: -20px;
+    margin-left: -25px;
     justify-content: center;
-    gap: 40px;
+    gap: 25px;
   }
   
   .header_content-btn {
@@ -173,35 +159,25 @@ body {
   
   /* Estilos para los botones */
   .mi-boton-genial {
-    width: 100px;
+    width: 120px;
     height: 40px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 
 @media (min-width: 992px)and (max-width: 1200px) {
-  .header {
-    
-    padding: 0px;
-    width: 100% ;
-    }
+  
   a {
     font-size: 18px;
   }
   .header_ul{
    display: flex;
-    margin: 0px;
-    padding: 5px;
-  }
-  .header_ul {
-    margin-left: -20px;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
   }
-  
   .header_content-btn {
     width: 100%;
     display: flex;
@@ -216,7 +192,7 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    font-size: 13px;
+    font-size: 17px;
   }
 }
 
@@ -224,7 +200,6 @@ body {
   .header {
     display: flex;
     align-items: center;
-    padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
@@ -232,19 +207,18 @@ body {
     list-style: none;
     display: flex;
     padding: 0;
-    margin-left: 150px;
-    gap: 30px;
+    margin-left: 50px;
+    gap: 20px;
   }
   
   .header_ul_li {
-    margin-right: 20px;
+    margin-left: -35px;
   }
   
   .header_content-btn {
-    
     display: flex;
    flex-direction: row;
-   justify-content: end;
+   
   }
   
   .mi-boton-genial {
@@ -256,6 +230,8 @@ body {
     display: flex;
     align-items: center;
   }
- 
+  h3{
+    width: 140px;
+  }
 }
 
