@@ -1,10 +1,11 @@
 /* AboutMe.css */
 .about {
     position: relative;
-    height: 120vh; /* Ajusta la altura deseada del contenedor */
+    height: auto; /* Ajusta la altura deseada del contenedor */
     background-image: url('/Banner-Superior-1-removebg-preview.png');
     background-size: cover;
     font-weight: bold;
+   
   }
  
   
@@ -37,6 +38,7 @@
     text-align: center;
     font-size: 22px;
     height: 200px;
+    margin: 0px;
     
   }
   

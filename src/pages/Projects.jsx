@@ -28,60 +28,60 @@ const Portafolio = () => {
                      <div className='proy_academlo'>
                     {
                         detail1 == false ? <article className='proy_1'>
-                        <p></p>
+                        <h2 className='proy_title_proyect'>Rik and Morty</h2>
                         <div> 
                             <button>Visitar</button>
                             <button onClick={toggleDetail}>detalles</button>
                         </div>
                     </article> : <article className='proy_detail' onClick={toggleDetail}>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>Diseño de escritorio, naegacion entre dimenciones</p>
+                        <p>Funcionalidades de busquedas por nombre o numero de dimenciones</p>
+                        <p>Se manipulo la api con peticiones rest</p>
                     </article>
                     }
                 </div>
                 <div className='proy_academlo'>
                     {
                         detail2 == false ? <article className='proy_2'>
-                        <p></p>
+                        <h2 className='proy_title_proyect'>Pokedex</h2>
                         <div> 
                             <button>Visitar</button>
                             <button onClick={toggleDetail2}>detalles</button>
                         </div>
                     </article> : <article className='proy_detail' onClick={toggleDetail2}>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>Diseño de escritorio, interfas de informacion de cada pokemon</p>
+                        <p>Funcionalidad de buscar por nombre y historial por nombre de usuario</p>
+                        <p>mostrar por maginas listas de pokemons </p>
                     </article>
                     }
                 </div>
                 <div className='proy_academlo'>
                     {
                         detail3 == false ? <article className='proy_3'>
-                        <p></p>
+                        <h2 className='proy_title_proyect'>Clima</h2>
                         <div> 
                             <button>Visitar</button>
                             <button onClick={toggleDetail3}>detalles</button>
                         </div>
                     </article> : <article className='proy_detail' onClick={toggleDetail3}>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>Diseño de escritorio, utilizacion de Api</p>
+                        <p>captacion de detalles de temperaturas en tiempo real</p>
+                        <p>navegacion de diferentes climas en distintos lugares</p>
                     </article>
                     }
                 </div>
                 <div className='proy_academlo'>
                     {
                         detail4 == false ? <article className='proy_4'>
-                        <p></p>
+                        <h2 className='proy_title_proyect'>Api de Peliculas </h2>
                         <div> 
                             <button>Visitar</button>
                             <button onClick={toggleDetail4}>detalles</button>
                         </div>
                     </article> : <article className='proy_detail' onClick={toggleDetail4}>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>Eleborado con firebase, para el almacenamiento de datos</p>
+                        <p>documentado con swwager hup, todas las peticiones </p>
+                        <p>Api resfull, tambien se uso un skeleton personalizado propio, para la ajilitacion de la api</p>
                     </article>
                     }
                 </div>

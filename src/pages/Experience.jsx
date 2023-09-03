@@ -5,7 +5,7 @@ const Experience = () => {
     const { t } = useTranslation();
 
     return (
-        <div className='expe'>
+        <div className='espe'>
         <div className='espe_content'>
             <section className='espe_principal'>
                 <h3>Experiencia laboral</h3>

@@ -12,7 +12,8 @@ body {
   /* Estilos para la sección de proyectos */
   .proy {
     text-align: center;
-    height: 100vh;
+    height: auto;
+    padding: 20px;
 
     @media screen and (max-width: 100%) {
       max-width: 90%;
@@ -24,7 +25,6 @@ body {
   
   .proy_title {
     font-weight: bold;
-    color: #333;
     margin-bottom: 20px;
   }
   
@@ -81,7 +81,9 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Centra la imagen en el contenedor */
   }
-  
+  .proy_title_proyect{
+    color: #003cff;
+  }
   p {
     font-size: 16px;
     color: #777;
@@ -96,34 +98,39 @@ body {
     border: none;
     border-radius: 5px;
   }
-  
-
-  .details-button {
-    background-color: #ff5722;
+  .proy_detail{
+    padding: 5px;
+    background-color: #c0cdd7a1;
   }
-  
-
-  
-  
-  
-  
   
   @media (max-width: 577px){
     .proy_title {
-      font-size: 20px;
-      margin-top: 100px;
+      font-size: 30px;
+      margin-top: 50px;
     }
     button {
     margin: 10px;
     }
     .proy_detail{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       height: 200px;
-      background-color: #9dc1daa1;
+      
+      
     }
   }
   @media (min-width:577px) and ( max-width: 768px){
     .proy_content_hijo {
       grid-template-columns: 1fr 1fr;
+    }
+    .proy_detail{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 190px;
+    
+      
     }
   }
   @media (min-width: 768px) and (max-width: 992px){
@@ -137,10 +144,50 @@ body {
     .proy_title {
       font-size: 32px;
     }
+    .proy_1 {
+      height: 260px;
+    }
+    .proy_2 {
+      height: 260px;
+    }
+    .proy_3 {
+      height: 260px;
+    }
+    .proy_4 {
+      height: 260px;
+     }
+    .proy_detail{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 250px;
+      
+      
+    }
   }
   @media (min-width: 992px)and (max-width: 1200px){
     .proy_content_hijo {
       grid-template-columns: 1fr 1fr;
+    }
+    .proy_1 {
+      height: 300px;
+    }
+    .proy_2 {
+      height: 300px;
+    }
+    .proy_3 {
+      height: 300px;
+    }
+    .proy_4 {
+      height: 300px;
+     }
+    .proy_detail{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 290px;
+     
+      
     }
   }
   @media (min-width: 1200px) {

@@ -1,5 +1,6 @@
 .skill{    
-    height: 100vh;
+    height: auto;
+    padding-bottom: 50px;
 }
 /* Estilos para el contenedor principal de habilidades */
 .skill {

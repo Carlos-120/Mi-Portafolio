@@ -1,5 +1,8 @@
 /* Estilos para el contenido de experiencia */
 .espe{
+  height: auto;
+  padding: 10px;
+
   @media screen and (max-width: 100%) {
     max-width: 90%;
     font-size: 14px;
@@ -15,33 +18,33 @@
   }
   
   /* Estilos para cada sección */
-  .expe section {
+  .espe section {
     max-width: 500px;
     padding: 30px;
     margin-top: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     
   }
-  .dark .expe section {
+  .dark .espe section {
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
   }
   
   /* Estilos para los títulos de sección */
-  .expe section h3 {
+  .espe section h3 {
     
     font-weight: bold;
     
   }
   
   /* Estilos para los subtítulos de sección */
-  .expe section h5 {
+  .espe section h5 {
     
     font-weight: bold;
     color: #7e7e7e;
   }
   
   /* Estilos para los párrafos de sección */
-  .expe section p {
+  .espe section p {
     font-size: 16px;
     color: #777;
   }
@@ -71,7 +74,7 @@ justify-content: center;
     }
     
     /* Estilos para cada sección */
-    .expe section {
+    .espe section {
       
       padding: 30px;
       margin-top: 20px;
@@ -80,19 +83,19 @@ justify-content: center;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       
     }
-    .expe section h3 {
+    .espe section h3 {
       font-size: 15px;
       font-weight: bold;
       
     }
 
-    .expe section h5 {
+    .espe section h5 {
       font-size: 13px;
       font-weight: bold;
       color: #7e7e7e;
     }
     
-    .expe section p {
+    .espe section p {
       font-size: 12px;
       color: #777;
     }
@@ -118,7 +121,7 @@ justify-content: center;
   }
   @media (min-width:577px) and ( max-width: 768px){
   
-    .expe section {
+    .espe section {
       
       padding: 30px;
       margin-top: 20px;
@@ -127,19 +130,19 @@ justify-content: center;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       
     }
-    .expe section h3 {
+    .espe section h3 {
       font-size: 17px;
       font-weight: bold;
       
     }
 
-    .expe section h5 {
+    .espe section h5 {
       font-size: 15px;
       font-weight: bold;
       color: #7e7e7e;
     }
     
-    .expe section p {
+    .espe section p {
       font-size: 14px;
       color: #777;
     }
@@ -164,26 +167,26 @@ justify-content: center;
     }
   }
   @media (min-width: 768px) and (max-width: 992px){
-    .expe section {
+    .espe section {
       margin-top: 20px;
       margin-left: 10px;
       margin-right: 10px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       
     }
-    .expe section h3 {
+    .espe section h3 {
       font-size: 20px;
       font-weight: bold;
       
     }
 
-    .expe section h5 {
+    .espe section h5 {
       font-size: 18px;
       font-weight: bold;
       color: #7e7e7e;
     }
     
-    .expe section p {
+    .espe section p {
       font-size: 16px;
       color: #777;
     }
@@ -204,7 +207,7 @@ justify-content: center;
     }
   }
   @media (min-width: 992px)and (max-width: 1200px){
-    .expe section {
+    .espe section {
       
       padding: 30px;
       margin-top: 20px;
@@ -213,19 +216,19 @@ justify-content: center;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       
     }
-    .expe section h3 {
+    .espe section h3 {
       font-size: 22px;
       font-weight: bold;
       
     }
 
-    .expe section h5 {
+    .espe section h5 {
       font-size: 19px;
       font-weight: bold;
       color: #7e7e7e;
     }
     
-    .expe section p {
+    .espe section p {
       font-size: 17px;
       color: #777;
     }
@@ -245,7 +248,7 @@ justify-content: center;
     }
   }
   @media (min-width: 1200px) {
-    .expe section {
+    .espe section {
       padding: 30px;
       margin-top: 20px;
       margin-left: 10px;
@@ -253,19 +256,19 @@ justify-content: center;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       
     }
-    .expe section h3 {
+    .espe section h3 {
       font-size: 25px;
       font-weight: bold;
       width: 100%;
     }
 
-    .expe section h5 {
+    .espe section h5 {
       font-size: 19px;
       font-weight: bold;
       color: #7e7e7e;
     }
     
-    .expe section p {
+    .espe section p {
       font-size: 18px;
       color: #777;
     }

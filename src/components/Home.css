@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
+    padding: 50px;
 
     @media screen and (max-width: 100%) {
       max-width: 90%; 
@@ -43,8 +44,8 @@
   .home_description {
     max-width: 80%; /* Ancho máximo para pantallas grandes */
     margin: 1rem auto;
-    height: 100px;
-    z-index: 1; /* Centrado horizontal con margen superior e inferior */
+    
+    z-index: 1; 
   
     /* Aplicar estilos específicos para pantallas más pequeñas usando media queries */
     @media screen and (max-width: 100%) {
@@ -56,7 +57,6 @@
   
   @media (max-width: 577px){
     .home_title{
-      margin-top: -320px;
       padding-bottom: 15px;
     }
     
@@ -73,30 +73,6 @@
       height: 180px; 
       object-fit: cover;
     }
-    .dark .background-image {
-      position: absolute;
-      top: 650px; 
-      left: 80px; 
-      width: 270px; 
-      height: 180px; 
-      object-fit: cover;
-    }
-    .background-image_2 {
-      position: absolute;
-      top: 156px; 
-      left: 357px; 
-      width: 220px; 
-      height: 180px; 
-      object-fit: cover;
-    }
-    .dark .background-image_2 {
-      position: absolute;
-      top: 156px; 
-      left: 260px; 
-      width: 220px; 
-      height: 180px; 
-      object-fit: cover;
-    }
     
    
   }
@@ -108,6 +84,7 @@
     .home_content {
       text-align: center;
       line-height: 1.5;
+     
      
     }
   
