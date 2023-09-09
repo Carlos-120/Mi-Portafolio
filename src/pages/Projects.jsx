@@ -30,7 +30,7 @@ const Portafolio = () => {
                         detail1 == false ? <article className='proy_1'>
                         <h2 className='proy_title_proyect'>{t('proyect_1_title')}</h2>
                         <div> 
-                            <button> <a target='_blank' href="https://rick-and-morty-120.netlify.app/">{t('proyect_1_vista')}</a></button>
+                           <a target='_blank' href="https://rick-and-morty-120.netlify.app/">  <button>{t('proyect_1_vista')}</button></a>
                             <button onClick={toggleDetail}>{t('proyect_1_detail')}</button>
                         </div>
                     </article> : <article className='proy_detail' onClick={toggleDetail}>
@@ -45,7 +45,7 @@ const Portafolio = () => {
                         detail2 == false ? <article className='proy_2'>
                         <h2 className='proy_title_proyect'>{t('proyect_2_title')}</h2>
                         <div> 
-                            <button> <a target='_blank' href="https://app.netlify.com/sites/pokemon-120/overview"></a>{t('proyect_1_vista')}</button>
+                             <a target='_blank' href="https://pokemon-120.netlify.app/#/pokedex"><button>{t('proyect_1_vista')}</button></a>
                             <button onClick={toggleDetail2}>{t('proyect_1_detail')}</button>
                         </div>
                     </article> : <article className='proy_detail' onClick={toggleDetail2}>
@@ -60,7 +60,7 @@ const Portafolio = () => {
                         detail3 == false ? <article className='proy_3'>
                         <h2 className='proy_title_proyect'>{t('proyect_3_title')}</h2>
                         <div> 
-                            <button> <a target='_blank' href="https://pronostico-del-clima.netlify.app/">{t('proyect_1_vista')}</a></button>
+                            <a target='_blank' href="https://pronostico-del-clima.netlify.app/"><button> {t('proyect_1_vista')}</button></a>
                             <button onClick={toggleDetail3}>{t('proyect_1_detail')}</button>
                         </div>
                     </article> : <article className='proy_detail' onClick={toggleDetail3}>
@@ -75,7 +75,7 @@ const Portafolio = () => {
                         detail4 == false ? <article className='proy_4'>
                         <h2 className='proy_title_proyect'>{t('proyect_4_title')}</h2>
                         <div> 
-                            <button><a target='_blank' href="https://app.swaggerhub.com/apis-docs/CPALATE18/api/1.0.0">{t('proyect_1_vista')}</a></button>
+                            <a target='_blank' href="https://app.swaggerhub.com/apis-docs/CPALATE18/api/1.0.0"><button>{t('proyect_1_vista')}</button></a>
                             <button onClick={toggleDetail4}>{t('proyect_1_detail')}</button>
                         </div>
                     </article> : <article className='proy_detail' onClick={toggleDetail4}>
