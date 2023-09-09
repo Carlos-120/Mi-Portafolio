@@ -46,7 +46,7 @@ body {
     justify-content: end;
     flex-direction: column;
     height: 200px;
-    background-image: url('rik-and-morty.png');
+    background-image: url('/public/rik-and-morty.png');
     background-size: 98%; /* La imagen se ajustará para caber dentro del contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Centra la imagen en el contenedor */
@@ -56,7 +56,7 @@ body {
     justify-content: end;
     flex-direction: column;
     height: 200px;
-    background-image: url('pokemos.png');
+    background-image: url('/public/pokemos.png');
     background-size: 98%; /* La imagen se ajustará para caber dentro del contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Centra la imagen en el contenedor */
@@ -66,7 +66,7 @@ body {
     justify-content: end;
     flex-direction: column;
     height: 200px;
-    background-image: url('app-del-clima.png');
+    background-image: url('/public/app-del-clima.png');
     background-size: 98%; /* La imagen se ajustará para caber dentro del contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Centra la imagen en el contenedor */
@@ -76,7 +76,7 @@ body {
     justify-content: end;
     flex-direction: column;
     height: 200px;
-    background-image: url('proyect.png');
+    background-image: url('/public/proyect.png');
     background-size: 98%; /* La imagen se ajustará para caber dentro del contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Centra la imagen en el contenedor */
