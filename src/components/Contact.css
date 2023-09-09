@@ -1,20 +1,209 @@
 .contact{
     height: auto;
-   padding: 50px;
+    padding: 50px;
+    
+    @media screen and (max-width: 100%) {
+        max-width: 90%;
+        font-size: 14px;
+        margin: 0.5rem auto;
+      }
+    }
+
+.contact_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.contact_title {
+   display: flex;
+   justify-content: center;
+}
+
+.contact_social {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_footer { 
+    margin-top: 50px;
+    padding: 20px;
+    color: #888;
+}
+
+
 
 @media (max-width: 577px){
-
+    .contact {
+        padding: 40px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .contact_title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .contact_data {
+        margin-bottom: 20px;
+    }
+    .contact_data p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    .content_social_icon {
+        margin: 0 10px;
+        padding: 5px;
+        height: 55px;
+        width: 50px;
+    }
+    .content_social_icon i{
+        font-size: 50px;
+    }
+    .content_social_icon h5{
+        font-size: 14px;
+    }
+    .contact_footer {
+      
+        font-size: 14px;
+        
+    }
 }
 @media (min-width:577px) and ( max-width: 768px){
-
+    .contact {
+        padding: 40px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .contact_title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .contact_data {
+        margin-bottom: 20px;
+    }
+    .contact_data p {
+        margin: 10px 0;
+        font-size: 18px;
+        margin: 20px;
+    }
+    .content_social_icon {
+        margin: 0 10px;
+        padding: 5px;
+        height: 65px;
+        width: 60px;
+    }
+    .content_social_icon i{
+        font-size: 60px;
+    }
+    .content_social_icon h5{
+        font-size: 16px;
+    }
+    .contact_footer {
+        margin-top: 150px;
+        font-size: 14px;
+    }
 }
 @media (min-width: 768px) and (max-width: 992px){
-
+    .contact {
+        padding: 40px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .contact_title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .contact_data {
+        margin-bottom: 20px;
+    }
+    .contact_data p {
+        margin: 10px 0;
+        font-size: 20px;
+        margin: 25px;
+    }
+    .content_social_icon {
+        margin: 0 10px;
+        padding: 5px;
+        height: 75px;
+        width: 70px;
+    }
+    .content_social_icon i{
+        font-size: 70px;
+    }
+    .content_social_icon h5{
+        font-size: 18px;
+    }
+    .contact_footer {
+        margin-top: 90px;
+        font-size: 16px;
+    }
 }
 @media (min-width: 992px)and (max-width: 1200px){
-
+    .contact {
+        padding: 40px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .contact_title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .contact_data {
+        margin-bottom: 50px;
+    }
+    .contact_data p {
+        margin: 10px 0;
+        font-size: 20px;
+        margin: 20px;
+    }
+    .content_social_icon {
+        margin: 0 10px;
+        padding: 5px;
+        height: 85px;
+        width: 80px;
+    }
+    .content_social_icon i{
+        font-size: 70px;
+    }
+    .content_social_icon h5{
+        font-size: 18px;
+    }
+    .contact_footer {
+        margin-top: 90px;
+        font-size: 18px;
+    }
 }
 @media (min-width: 1200px) {
-  
+    .contact {
+        padding: 40px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .contact_title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .contact_data {
+        margin-bottom: 50px;
+    }
+    .contact_data p {
+        margin: 10px 0;
+        font-size: 20px;
+        margin: 20px;
+    }
+    .content_social_icon {
+        margin: 0 10px;
+        padding: 5px;
+        height: 85px;
+        width: 80px;
+    }
+    .content_social_icon i{
+        font-size: 70px;
+    }
+    .content_social_icon h5{
+        font-size: 18px;
+    }
+    .contact_footer {
+        margin-top: 60px;
+        font-size: 18px;
+    }
 }

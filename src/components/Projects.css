@@ -84,11 +84,7 @@ body {
   .proy_title_proyect{
     color: #003cff;
   }
-  p {
-    font-size: 16px;
-    color: #777;
-  }
-  
+
  
   button {
     cursor: pointer;
@@ -102,7 +98,9 @@ body {
     padding: 5px;
     background-color: #c0cdd7a1;
   }
-  
+  .dark  .proy_detail{
+    background-color: #131313a1;
+  }
   @media (max-width: 577px){
     .proy_title {
       font-size: 30px;
@@ -129,9 +127,8 @@ body {
       justify-content: center;
       flex-direction: column;
       height: 190px;
-    
-      
     }
+    
   }
   @media (min-width: 768px) and (max-width: 992px){
     .proy_content_hijo {
@@ -186,12 +183,28 @@ body {
       justify-content: center;
       flex-direction: column;
       height: 290px;
-     
-      
-    }
+    }     
   }
   @media (min-width: 1200px) {
     .proy_content_hijo {
       grid-template-columns: 1fr 1fr;
     }
+    .proy_1 {
+      height: 300px;
+    }
+    .proy_2 {
+      height: 300px;
+    }
+    .proy_3 {
+      height: 300px;
+    }
+    .proy_4 {
+      height: 300px;
+     }
+    .proy_detail{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 290px;
+    }   
   }

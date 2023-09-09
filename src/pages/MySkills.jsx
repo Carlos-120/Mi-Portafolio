@@ -7,7 +7,7 @@ const MySkills = () => {
 
     return (
         <div className='skill'>
-            <h1 className='skill_title'>Mis Habilidades</h1>
+            <h1 className='skill_title'>{t('mySkills')}</h1>
             <div className='skill_content'>
                 
                 <div>
@@ -17,11 +17,11 @@ const MySkills = () => {
                 </div>
             </div>
             <section>
-              <li>Diseño responsivo</li>
-              <li>Bases de datos</li>
-              <li>control de versiones</li>
-              <li>Conocimiento de UX/UI</li>
-              <li>Manejo de APIs:</li>
+              <li>{t('skill_1')}</li>
+              <li>{t('skill_2')}</li>
+              <li>{t('skill_3')}</li>
+              <li>{t('skill_4')}</li>
+              <li>{t('skill_5')}</li>
             </section>
         </div>
     )

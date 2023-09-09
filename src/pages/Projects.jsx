@@ -23,65 +23,65 @@ const Portafolio = () => {
     return (
         <div className='proy'>
             <div className='proy_content'>
-                <h1 className='proy_title'>Proyectos</h1>
+                <h1 className='proy_title'>{t('projects')}</h1>
                 <section className='proy_content_hijo'>
                      <div className='proy_academlo'>
                     {
                         detail1 == false ? <article className='proy_1'>
-                        <h2 className='proy_title_proyect'>Rik and Morty</h2>
+                        <h2 className='proy_title_proyect'>{t('proyect_1_title')}</h2>
                         <div> 
-                            <button>Visitar</button>
-                            <button onClick={toggleDetail}>detalles</button>
+                            <button> <a target='_blank' href="https://rick-and-morty-120.netlify.app/">{t('proyect_1_vista')}</a></button>
+                            <button onClick={toggleDetail}>{t('proyect_1_detail')}</button>
                         </div>
                     </article> : <article className='proy_detail' onClick={toggleDetail}>
-                        <p>Diseño de escritorio, naegacion entre dimenciones</p>
-                        <p>Funcionalidades de busquedas por nombre o numero de dimenciones</p>
-                        <p>Se manipulo la api con peticiones rest</p>
+                        <p>{t('proyect_1_p_1')}</p>
+                        <p>{t('proyect_1_p_2')}</p>
+                        <p>{t('proyect_1_p_3')}</p>
                     </article>
                     }
                 </div>
                 <div className='proy_academlo'>
                     {
                         detail2 == false ? <article className='proy_2'>
-                        <h2 className='proy_title_proyect'>Pokedex</h2>
+                        <h2 className='proy_title_proyect'>{t('proyect_2_title')}</h2>
                         <div> 
-                            <button>Visitar</button>
-                            <button onClick={toggleDetail2}>detalles</button>
+                            <button> <a target='_blank' href="https://app.netlify.com/sites/pokemon-120/overview"></a>{t('proyect_1_vista')}</button>
+                            <button onClick={toggleDetail2}>{t('proyect_1_detail')}</button>
                         </div>
                     </article> : <article className='proy_detail' onClick={toggleDetail2}>
-                        <p>Diseño de escritorio, interfas de informacion de cada pokemon</p>
-                        <p>Funcionalidad de buscar por nombre y historial por nombre de usuario</p>
-                        <p>mostrar por maginas listas de pokemons </p>
+                        <p>{t('proyect_2_p_1')}</p>
+                        <p>{t('proyect_2_p_2')} </p>
+                        <p>{t('proyect_2_p_3')} </p>
                     </article>
                     }
                 </div>
                 <div className='proy_academlo'>
                     {
                         detail3 == false ? <article className='proy_3'>
-                        <h2 className='proy_title_proyect'>Clima</h2>
+                        <h2 className='proy_title_proyect'>{t('proyect_3_title')}</h2>
                         <div> 
-                            <button>Visitar</button>
-                            <button onClick={toggleDetail3}>detalles</button>
+                            <button> <a target='_blank' href="https://pronostico-del-clima.netlify.app/">{t('proyect_1_vista')}</a></button>
+                            <button onClick={toggleDetail3}>{t('proyect_1_detail')}</button>
                         </div>
                     </article> : <article className='proy_detail' onClick={toggleDetail3}>
-                        <p>Diseño de escritorio, utilizacion de Api</p>
-                        <p>captacion de detalles de temperaturas en tiempo real</p>
-                        <p>navegacion de diferentes climas en distintos lugares</p>
+                        <p>{t('proyect_3_p_1')}</p>
+                        <p>{t('proyect_3_p_2')}</p>
+                        <p>{t('proyect_3_p_3')}</p>
                     </article>
                     }
                 </div>
                 <div className='proy_academlo'>
                     {
                         detail4 == false ? <article className='proy_4'>
-                        <h2 className='proy_title_proyect'>Api de Peliculas </h2>
+                        <h2 className='proy_title_proyect'>{t('proyect_4_title')}</h2>
                         <div> 
-                            <button>Visitar</button>
-                            <button onClick={toggleDetail4}>detalles</button>
+                            <button><a target='_blank' href="https://app.swaggerhub.com/apis-docs/CPALATE18/api/1.0.0">{t('proyect_1_vista')}</a></button>
+                            <button onClick={toggleDetail4}>{t('proyect_1_detail')}</button>
                         </div>
                     </article> : <article className='proy_detail' onClick={toggleDetail4}>
-                        <p>Eleborado con firebase, para el almacenamiento de datos</p>
-                        <p>documentado con swwager hup, todas las peticiones </p>
-                        <p>Api resfull, tambien se uso un skeleton personalizado propio, para la ajilitacion de la api</p>
+                        <p>{t('proyect_4_p_1')}</p>
+                        <p>{t('proyect_4_p_2')}</p>
+                        <p>{t('proyect_4_p_2')}</p>
                     </article>
                     }
                 </div>
