@@ -1,14 +1,21 @@
+import React, { useState } from 'react';
+import { useRoutes, Outlet } from 'react-router-dom';
+import Home from './pages/Home';
+import AboutMe from './pages/AboutMe';
+import MySkills from './pages/MySkills';
+import Experience from './pages/Experience';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Header from './layout/Header';
 
-import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import AboutMe from './pages/AboutMe'
-import MySkills from './pages/MySkills'
-import Experience from './pages/Experience'
-import Projects from './pages/Projects'
-import Contact from './pages/Contact'
-import Header from './layout/Header'
-import { useState } from 'react'
-
+const routes = [
+  { path: '/', element: <Home /> },
+  { path: 'aboutme', element: <AboutMe /> },
+  { path: 'myskills', element: <MySkills /> },
+  { path: 'experience', element: <Experience /> },
+  { path: 'projects', element: <Projects /> },
+  { path: 'contact', element: <Contact /> },
+];
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -16,19 +23,15 @@ function App() {
   const handleDarkModeToggle = () => {
     setIsDarkMode(!isDarkMode);
   };
+
+  const routing = useRoutes(routes);
+
   return (
     <div className={`min-h-screen ${isDarkMode ? 'dark' : 'light'}`}>
-      < Header handleDarkModeToggle={handleDarkModeToggle} isDarkMode={isDarkMode} />
-      <Routes >
-        <Route path='/' element={<Home />} />
-        <Route path='/aboutme' element={<AboutMe />} />
-        <Route path='/myskills' element={<MySkills />} />
-        <Route path='/experience' element={<Experience />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/contact' element={<Contact />} />
-      </Routes>
+      <Header handleDarkModeToggle={handleDarkModeToggle} isDarkMode={isDarkMode} />
+      {routing}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
