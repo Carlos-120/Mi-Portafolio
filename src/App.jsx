@@ -21,7 +21,7 @@ function App() {
       < Header handleDarkModeToggle={handleDarkModeToggle} isDarkMode={isDarkMode} />
       <Routes >
         <Route path='/' element={<Home />} />
-        <Route path='/' element={<AboutMe />} />
+        <Route path='/aboutme' element={<AboutMe />} />
         <Route path='/myskills' element={<MySkills />} />
         <Route path='/experience' element={<Experience />} />
         <Route path='/projects' element={<Projects />} />
