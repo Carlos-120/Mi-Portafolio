@@ -1,4 +1,4 @@
-const { redirect } = require("@netlify/redirector");
+import { redirect } from "@netlify/redirector";
 
 module.exports = redirect([
   { from: "/aboutme", to: "/index.html", status: 200 },
