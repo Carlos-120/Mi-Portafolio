@@ -9,9 +9,11 @@ const resources = {
       // pege 1
       welcome: "Welcome to my portfolio!",
       home: "Home",
+      home_alert:
+        "Hello 👋, if you liked my portfolio✨ I invite you to contact me by 📧mail or 📞whatsapp",
       hometitile: "Briefcase",
       homecontent:
-        "Versatile Full Stack professional developer, with professional experience on both the client and server side. With extensive knowledge in tools that allow me to face any phase in the construction of software.",
+        "Hello! I'm Carlos, a web developer with a passion for web design and structure. With a background in Full-Stack Programming, I have developed solid skills in team development and communication. I like to spend time solving logic exercises and listening to music, I'm also open to new experiences whether they're client-side or server-side.   ",
       homebutton: "Download CV",
       // Page 2
       aboutMe: "About Me",
@@ -78,9 +80,11 @@ const resources = {
     translation: {
       welcome: "¡Bienvenido a mi portafolio!",
       home: "Inicio",
+      home_alert:
+        "Hola 👋, si te gusto mi portafolio✨ te invito a contactarme por 📧correo o por 📞whatsapp",
       hometitile: "Portafolio",
       homecontent:
-        "        Desarrollador profesional versátil Full Stack, con experiencia profesional tanto en el lado del cliente como del servidor. Con amplios conocimientos en herramientas que me permiten afrontar cualquier fase en la construcción de software.",
+        "¡Hola! Soy Carlos, un Desarrollador web apasionado por el diseño y estructura web. Con una formación en Programación full-stack, he desarrollado habilidades sólidas desarrollo en quipo y la comunicación. Me gusta pasar tiempo resolviendo ejercicios de lógica y escuchando música, también estoy abierto a nuevas experiencias ya sean tanto del lado del cliente o del lado del servidor.   ",
       homebutton: "Descargar CV",
       // paguina 1
       aboutMe: "Sobre mí",
@@ -92,7 +96,7 @@ const resources = {
         "Me gusta salir al campo, meditar, hacer ejercicio y aprender nuevas tecnologías",
       aboutMe_5:
         "Mi peli favorita es de la 'La teoría del todo' Amor y supervivencia de",
-      aboutMe_5_5: "Stephen Hawking:",
+      aboutMe_5_5: " Stephen Hawking:",
       aboutMe_6:
         " No debería haber límites para el esfuerzo humano. No importa cuán dura nos parezca la vida, mientras haya vida hay esperanza.",
       // paguina 2

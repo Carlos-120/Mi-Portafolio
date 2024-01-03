@@ -1,138 +1,90 @@
 /* Estilos para centrar todo el contenido dentro del div */
 .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 20px;
 
-    @media screen and (max-width: 100%) {
-      max-width: 90%; 
-      font-size: 14px; 
-      margin: 0.5rem auto; 
-    }
+  @media screen and (max-width: 100%) {
+    max-width: 90%;
+    font-size: 14px;
+    margin: 0.5rem auto;
+  }
+}
 
+
+.home_content {
+  text-align: center;
+  line-height: 1.5;
+}
+
+@keyframes revealImage {
+  0% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    opacity: 0;
   }
-  .dark .home {
-    
-    height: 80vh;
+  100% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 50%);
+    opacity: 1;
   }
-  
-  
+}
+
+.home_description {
+  max-width: 80%;
+  margin: 1rem auto;
+  z-index: 1;
+
+  @media screen and (max-width: 100%) {
+    max-width: 90%;
+    font-size: 14px;
+    margin: 0.5rem auto;
+  }
+}
+
+@media (max-width: 577px) {
+ 
+
   .home_content {
     text-align: center;
     line-height: 1.5;
-   
   }
 
- 
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
   
-  @keyframes revealImage {
-    0% {
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Máscara inicial que oculta la imagen */
-      opacity: 0; /* Opacidad inicial */
-    }
-    100% {
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 50% ); /* Máscara final que revela la imagen */
-      opacity: 1; /* Opacidad final */
-    }
+
+  .home_content {
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  
+
+  .home_content {
+    text-align: center;
+    line-height: 1.5;
   }
 
-  
   .home_description {
-    max-width: 80%; /* Ancho máximo para pantallas grandes */
-    margin: 1rem auto;
-    
-    z-index: 1; 
-  
-    /* Aplicar estilos específicos para pantallas más pequeñas usando media queries */
-    @media screen and (max-width: 100%) {
-      max-width: 90%; /* Reducir el ancho máximo para pantallas más pequeñas */
-      font-size: 14px; /* Reducir el tamaño de fuente para mejor legibilidad */
-      margin: 0.5rem auto; /* Ajustar el margen en pantallas pequeñas */
-    }
+    font-size: 20px;
   }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
   
-  @media (max-width: 577px){
-    .home_title{
-      padding-bottom: 15px;
-    }
-    
-    .home_content {
-      text-align: center;
-      line-height: 1.5;
-     
-    }
-    .background-image {
-      position: absolute;
-      top: 650px; 
-      left: 80px; 
-      width: 270px; 
-      height: 180px; 
-      object-fit: cover;
-    }
-    
-   
+
+  .home_description {
+    font-size: 20px;
   }
-  @media (min-width:577px) and ( max-width: 768px){
-    .home_title{
-      padding-bottom: 15px;
-    }
-    
-    .home_content {
-      text-align: center;
-      line-height: 1.5;
-     
-     
-    }
-  
-    .background-image {
-      position: absolute;
-      top: 650px; 
-      left: 80px; 
-      width: 270px; 
-      height: 180px; 
-      object-fit: cover;
-    }
-    .background-image_2 {
-      position: absolute;
-      top: 156px; 
-      left: 440px; 
-      width: 220px; 
-      height: 180px; 
-      object-fit: cover;
-    }
-    }
-  
-  @media (min-width: 768px) and (max-width: 992px){
-    .home_title{
-      padding-bottom: 15px;
-    }
-    
-    .home_content {
-      text-align: center;
-      line-height: 1.5;
-     
-    }
-    .home_description{
-      font-size: 20px;
-    }
-   
+}
+
+@media (min-width: 1200px) {
+  .home_title {
+    margin-top: -00px;
+    padding-bottom: 15px;
   }
-  @media (min-width: 992px)and (max-width: 1200px){
-    .home_title{
-      padding-bottom: 15px;
-    }
-    .home_description{
-      font-size: 20px;
-    }
-  }
-  @media (min-width: 1200px){
-    .home_title{
-      margin-top: -00px;
-      padding-bottom: 15px;
-    }
-   
-    
-  }
-  
+}

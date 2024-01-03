@@ -5,14 +5,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: rgb(227, 227, 227); /* Color de fondo para el modo claro */
-  color: #181818; /* Color de texto para el modo claro */
+  background-color: #C1E1F5; /* Color de fondo para el modo claro */
+  color: #1E3767; /* Color de texto para el modo claro */
 }
 
 /* Estilos específicos para dark mode */
 .dark {
-  background-color: rgb(6, 3, 3); /* Color de fondo para el modo oscuro */
-  color: #f7fafc; /* Color de texto para el modo oscuro */
+  background-color: #0E0E10; /* Color de fondo para el modo oscuro */
+  color: #ffffff82; /* Color de texto para el modo oscuro */
 }
 
 
@@ -31,9 +31,9 @@ a {
   color: rgb(33, 33, 33);
 }
 .dark a {
-  color: rgb(196, 196, 196);
+  color:#007BFF;
 }
-
+   
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -42,26 +42,118 @@ a {
     opacity: 1;
   }
 }
-.home_content, .about_content, .contact_content, .espe_content, .skill_content, .proy_content {
-  animation: fadeIn 0.8s ease-out;
-}
-.mi-boton-genial {
-  border-radius: 0.25rem;
-   border: none;
-  margin-left: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+.mi-boton-genial { 
+    background-color: #007BFF;
+    padding: 8px 16px;
+    border-color: #0056b3;
+    border-radius: 0.25rem;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px #333333;
+    color: #FFFFFF;
+    margin-bottom: 8px;
 }
 .dark .mi-boton-genial {
-  background-color: #0b0e0e;
-  color: #f7fafc;
+  color: #f7fafca4;
 }
 /* Estilos al pasar el cursor por encima */
 .mi-boton-genial:hover {
-  background-color: #4772d0;
+  background-color: 0 4px 8px rgba(0, 123, 255, 0.3);
 }
 
 .dark .mi-boton-genial:hover {
-  background-color: #222020;
+  background-color: #0e8299aa;
+}
+/* Responsividad */
+@media (max-width: 577px) {
+  .home{
+    padding-top: 200px;
+  }
+  .about, .espe, .contact, .proy, .skill{
+    padding-top: 130px;
+  }
+  .home_title,.about_title,.skill_title, .experiencia_title,.proy_title ,.contact_title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .home_description, .about_content p, .about_personalizado, .espe section p, .espe_ultimo p,   .proy_detail p,.skill section li{
+    font-size: 14px;
+     
+  }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .home{
+    padding-top: 200px;
+  }
+  .about, .espe, .contact, .proy, .skill{
+    padding-top: 130px;
+  }
+
+  .home_title,.about_title,.skill_title, .experiencia_title,.proy_title ,.contact_title{
+    font-size: 20px;
+    text-align: center;
+  }
+  .home_description,.about_content p, .about_personalizado, .espe section p, .espe_ultimo p,   .proy_detail p,.skill section li  {
+    font-size: 16px;
+     
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .home{
+    padding-top: 200px;
+  }
+  .about, .espe, .contact, .proy, .skill{
+    padding-top: 130px;
+  }
+  .home_title, .about_title,.skill_title, .experiencia_title,.proy_title ,.contact_title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+  .home_description,.about_content p, .about_personalizado, .espe section p, .espe_ultimo p,   .proy_detail p,.skill section li {
+    font-size: 18px;
+     
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .home{
+    padding-top: 200px;
+  }
+  .about, .espe, .contact, .proy, .skill{
+    padding-top: 130px;
+  }
+  .home_title,.about_title,.skill_title, .experiencia_title,.proy_title ,.contact_title {
+    font-size: 20px;
+    text-align: center;
+
+  }
+
+  .home_description,.about_content p, .about_personalizado, .espe section p, .espe_ultimo p,   .proy_detail p,.skill section li  {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home{
+    padding-top: 200px;
+  }
+  .about, .espe, .contact, .proy, .skill{
+    padding-top: 130px;
+  }
+  .home_title,.about_title,.skill_title, .experiencia_title,.proy_title ,.contact_title {
+    text-align: center;
+    font-size: 24px;
+}
+.home_description,.about_content p, .about_personalizado, .espe section p, .espe_ultimo p,   .proy_detail p,.skill section li  {
+  font-size: 18px;
+   
+}
 }

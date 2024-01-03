@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import "../components/Projects.css"
-const Portafolio = () => {
+const Projects = () => {
     const { t } = useTranslation();
     const [detail1, setDetail1] = useState(false);
     const [detail2, setDetail2] = useState(false);
@@ -21,7 +21,7 @@ const Portafolio = () => {
         setDetail4(!detail4);
       };
     return (
-        <div className='proy'>
+        <div id='projects' className='proy'>
             <div className='proy_content'>
                 <h1 className='proy_title'>{t('projects')}</h1>
                 <section className='proy_content_hijo'>
@@ -92,4 +92,4 @@ const Portafolio = () => {
     )
 }
 
-export default Portafolio
+export default Projects

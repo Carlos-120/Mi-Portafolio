@@ -6,6 +6,8 @@ const Experience = () => {
 
     return (
         <div className='espe'>
+            <div>
+        <h1 id='experience' className='experiencia_title'>{t('experience')}</h1>
         <div className='espe_content'>
             <section className='espe_principal'>
                 <h3>{t('espe_1')}</h3>
@@ -24,6 +26,8 @@ const Experience = () => {
                 <p>{t('espe_3_p_1')}</p>
                 <p>{t('espe_3_p_2')}</p>
             </div>
+            </div>
+           
     </div>
     )
 }

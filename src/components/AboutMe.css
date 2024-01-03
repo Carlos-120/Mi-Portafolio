@@ -1,176 +1,93 @@
 /* AboutMe.css */
+
 .about {
-    position: relative;
-    height: auto; /* Ajusta la altura deseada del contenedor */
-    background-image: url('/Banner-Superior-1-removebg-preview.png');
-    background-size: cover;
-    font-weight: bold;
-   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-size: cover;
+  font-weight: bold;
+}
+
+
+.about_content {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: auto auto; /* Utiliza 'auto' para que las columnas se ajusten automáticamente */
+  gap: 5px;
+}
+
+/* Otros estilos para .about_content si es necesario */
+
+
+.about_personalizado {
+  padding: 40px;
+  text-align: center;
+  font-size: 20px;
+  height: auto;
+}
+
+/* Animación "typewriter" */
+@keyframes typewriter {
+  from {
+    width: 0;
   }
+  to {
+    width: 100%;
+  }
+}
+
+.typewriter-text {
+  overflow: hidden;
+  animation: typewriter 4s steps(70) forwards;
+}
+
+@media (max-width: 577px) {
  
-  
-  .about_title {
-    text-align: center;
-  }
-  
-  .about_content_padre {
-    height: 100%;
-   
-  }
-  
-  .dark .about_content_padre {
-    margin-top: -24px;
-    height: 100%;
-    background: hsla(0, 0%, 4%, 0.755);
-  }
-  
-  .about_content {
-    padding-top: 30px;
-    padding-left: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Dividimos el contenido en dos columnas de igual tamaño */
-    gap: 5px;
-    
+  .about_content p {
+    font-size: 12px;
   }
   
   .about_personalizado {
-    padding: 80px;
     text-align: center;
-    font-size: 22px;
-    height: 200px;
-    margin: 0px;
-    
+    font-size: 15px;
   }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
   
-  /* Animación "typewriter" */
-  @keyframes typewriter {
-    from {
-      width: 0; /* Comienza con ancho cero para que parezca que no hay texto */
-    }
-    to {
-      width: 100%; /* Llega al ancho completo mostrando todo el texto */
-    }
+  .about_content p {
+    font-size: 15px;
   }
-  @media (max-width: 577px){
-    .about_title {
-      text-align: center;
-      padding-top: 68px;
-    }
-    .about_content p {
-      font-size: 12px;
-    }
-    
-    .about_personalizado {
-      padding: 40px;
-      text-align: center;
-      font-size: 15px;
-      height: 200px;
-      
-    }
-    .typewriter-text {
-      overflow: hidden; /* Oculta el texto que sale del contenedor */
-      white-space: normal;
-      animation: typewriter 4s steps(70) forwards; /* 4s es la duración de la animación */
-      /* "steps(40)" dividirá la animación en 40 pasos, ajusta este número según desees */
-    }
+
+  .about_personalizado {
+    text-align: center;
+    font-size: 18px;
   }
-  @media (min-width:577px) and ( max-width: 768px){
-    .about_title {
-      text-align: center;
-      padding-top: 108px;
-    }
-    .about_content p {
-      font-size: 15px;
-    }
-    
-    .about_personalizado {
-      padding: 40px;
-      text-align: center;
-      font-size: 18px;
-      height: 200px;
-      
-    }
-    .typewriter-text {
-      overflow: hidden; /* Oculta el texto que sale del contenedor */
-      white-space: normal;
-      animation: typewriter 4s steps(70) forwards; /* 4s es la duración de la animación */
-      /* "steps(40)" dividirá la animación en 40 pasos, ajusta este número según desees */
-    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+ 
+  .about_content p {
+    font-size: 15px;
   }
-  @media (min-width: 768px) and (max-width: 992px){
-    .about_title {
-      text-align: center;
-      padding-top: 108px;
-      
-    }
-    .about_content p {
-      font-size: 15px;
-    }
-    
-    .about_personalizado {
-      padding: 40px;
-      text-align: center;
-      font-size: 20px;
-      height: 200px;
-      
-    }
-    .typewriter-text {
-      overflow: hidden; /* Oculta el texto que sale del contenedor */
-      white-space: nowrap;
-      animation: typewriter 4s steps(70) forwards; /* 4s es la duración de la animación */
-      /* "steps(40)" dividirá la animación en 40 pasos, ajusta este número según desees */
-    }
+
+  .about_personalizado {
+    text-align: center;
+    font-size: 20px;
   }
-  @media (min-width: 992px)and (max-width: 1200px){
-    .about_title {
-      text-align: center;
-      padding-top: 97px;
-      font-size: 35px;
-    }
-    .about_content p {
-      font-size: 17px;
-    }
-    
-    .about_personalizado {
-      padding: 40px;
-      text-align: center;
-      font-size: 18px;
-      height: 200px;
-    }
-    .dark .about_content_padre {
-      margin-top: -32px;
-    }
-    .typewriter-text {
-      overflow: hidden; /* Oculta el texto que sale del contenedor */
-      white-space: nowrap;
-      animation: typewriter 4s steps(70) forwards; /* 4s es la duración de la animación */
-      /* "steps(40)" dividirá la animación en 40 pasos, ajusta este número según desees */
-    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  .about_content p {
+    font-size: 17px;
   }
-  @media (min-width: 1200px) {
-    .about_title {
-      text-align: center;
-      padding-top: 98px;
-      font-size: 35px;
-    }
-    .about_content p {
-      font-size: 17px;
-    }
-    
-    .about_personalizado {
-      padding: 40px;
-      text-align: center;
-      font-size: 20px;
-      height: 200px;
-      
-    }
-    .dark .about_content_padre {
-      margin-top: -30px;
-    }
-    .typewriter-text {
-      overflow: hidden; /* Oculta el texto que sale del contenedor */
-      white-space: nowrap;
-      animation: typewriter 4s steps(70) forwards; /* 4s es la duración de la animación */
-      /* "steps(40)" dividirá la animación en 40 pasos, ajusta este número según desees */
-    }
+
+  .about_personalizado {
+    text-align: center;
+    font-size: 18px;
   }
+}
+
+

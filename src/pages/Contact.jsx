@@ -6,8 +6,8 @@ const Contact = () => {
     const { t } = useTranslation();
 
     return (
-        <div className='contact'>
-            <h2 className='contact_title'>{t('contact')}</h2>
+        <div  className='contact'>
+            <h2 id='contact' className='contact_title'>{t('contact')}</h2>
             <section className='contact_content'>
                 <div className='contact_data'>
                     <a href="mailto:cpalate18@gmail.com">
@@ -15,7 +15,7 @@ const Contact = () => {
                     </a>
                     
                     <a href="https://wa.me/593962628217">
-                        <p><i className='bx bx-phone'></i> +593 962628217</p>
+                        <p><i className='bx bx-phone'></i> +593 967473971</p>
                     </a>
                     
                 </div>
