@@ -1,27 +1,9 @@
 
-body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Estilos para la sección de proyectos */
   .proy {
     text-align: center;
     height: auto;
     padding: 20px;
-
-    @media screen and (max-width: 100%) {
-      max-width: 90%;
-      font-size: 14px;
-      margin: 0.5rem auto;
     }
-    
-  }
   
   .proy_title {
     font-weight: bold;
@@ -41,48 +23,31 @@ body {
   .dark article{
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.377);
   }
-  .proy_1 {
+  .proy_1, .proy_2, .proy_3,.proy_4{
     display: flex;
     justify-content: end;
     flex-direction: column;
     height: 200px;
-    background-image: url('/public/rik-and-morty.png');
     background-size: 98%; /* La imagen se ajustará para caber dentro del contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center center; /* Centra la imagen en el contenedor */
+    background-position: center center; 
   }
-  .proy_2 {
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    height: 200px;
+  .proy_1 {
+    background-image: url('/public/rik-and-morty.png');
+  }
+  .proy_2 { 
     background-image: url('/public/pokemos.png');
-    background-size: 98%; /* La imagen se ajustará para caber dentro del contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center center; /* Centra la imagen en el contenedor */
   }
   .proy_3 {
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    height: 200px;
+    
     background-image: url('/public/app-del-clima.png');
-    background-size: 98%; /* La imagen se ajustará para caber dentro del contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center center; /* Centra la imagen en el contenedor */
   }
   .proy_4 {
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    height: 200px;
+    
     background-image: url('/public/proyect.png');
-    background-size: 98%; /* La imagen se ajustará para caber dentro del contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center center; /* Centra la imagen en el contenedor */
   }
   .proy_title_proyect{
-    color: #003cff;
+    color: #d000ff;
   }
 
  
@@ -90,20 +55,21 @@ body {
     height: 30px;
     width: 80px;
     cursor: pointer;
-    background-color: #007bff;
-    padding: 8px 16px;
+    background-color: #0080ff;
+    margin: 5px;
     border: none;
     border-radius: 5px;
+    
   } 
   button:hover{
     background: #3b64ec;
   }
   .proy_detail{
     padding: 5px;
-    background-color: #c0cdd7a1;
+    background-color: #B3E0F2;
   }
   .dark  .proy_detail{
-    background-color: #131313a1;
+    background-color: #0C0C0C;
   }
   @media (max-width: 577px){
     .proy_title {
@@ -121,6 +87,7 @@ body {
       
       
     }
+ 
   }
   @media (min-width:577px) and ( max-width: 768px){
     .proy_content_hijo {
@@ -145,18 +112,9 @@ body {
     .proy_title {
       font-size: 32px;
     }
-    .proy_1 {
+    .proy_1, .proy_2,.proy_3,.proy_4 {
       height: 260px;
     }
-    .proy_2 {
-      height: 260px;
-    }
-    .proy_3 {
-      height: 260px;
-    }
-    .proy_4 {
-      height: 260px;
-     }
     .proy_detail{
       display: flex;
       justify-content: center;
@@ -170,18 +128,9 @@ body {
     .proy_content_hijo {
       grid-template-columns: 1fr 1fr;
     }
-    .proy_1 {
+    .proy_1,  .proy_2,.proy_3,.proy_4{
       height: 300px;
     }
-    .proy_2 {
-      height: 300px;
-    }
-    .proy_3 {
-      height: 300px;
-    }
-    .proy_4 {
-      height: 300px;
-     }
     .proy_detail{
       display: flex;
       justify-content: center;
@@ -193,18 +142,10 @@ body {
     .proy_content_hijo {
       grid-template-columns: 1fr 1fr;
     }
-    .proy_1 {
+    .proy_1, .proy_2,.proy_3,.proy_4 {
       height: 300px;
     }
-    .proy_2 {
-      height: 300px;
-    }
-    .proy_3 {
-      height: 300px;
-    }
-    .proy_4 {
-      height: 300px;
-     }
+  
     .proy_detail{
       display: flex;
       justify-content: center;

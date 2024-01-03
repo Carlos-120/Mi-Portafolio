@@ -6,8 +6,9 @@ const MySkills = () => {
     const { t } = useTranslation();
 
     return (
-        <div className='skill'>
-            <h1 className='skill_title'>{t('mySkills')}</h1>
+        <div id='myskills' className='skill'>
+            <div className='myskills' >
+                <h1 className='skill_title'>{t('mySkills')}</h1>
             <div className='skill_content'>
                 
                 <div>
@@ -23,6 +24,8 @@ const MySkills = () => {
               <li>{t('skill_4')}</li>
               <li>{t('skill_5')}</li>
             </section>
+            </div>
+            
         </div>
     )
 }

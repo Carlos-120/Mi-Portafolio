@@ -1,0 +1,42 @@
+/* CustomAlert.css (Estilos para la Alerta) */
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4c7faff4;
+    color: #000000;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .dark .custom-alert{
+    background-color: #0b0b0cf9;
+    color: #dcd4d4;
+  }
+  
+  .custom-alert.visible {
+    display: block;
+    opacity: 1;
+  }
+  
+  .custom-alert.hidden {
+    display: none;
+    opacity: 0;
+  }
+  
+  .custom-alert button {
+    background-color: #007BFF;
+    color: #000000fb;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 14px;
+  }
+  
+  

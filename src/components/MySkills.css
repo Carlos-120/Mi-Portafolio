@@ -1,215 +1,80 @@
-.skill{    
-    height: auto;
-    padding-bottom: 50px;
-}
 /* Estilos para el contenedor principal de habilidades */
 .skill {
-    text-align: center;
-  }
-  
-  /* Estilos para el título de habilidades */
-  .skill_title {
-    font-weight: bold;
-    
-  }
-  
-  /* Estilos para el contenedor de íconos */
-  .skill_content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  /* Estilos para los íconos */
-  .skill_content i {
-    transition: transform 0.3s ease-in-out;
-  }
-  .js{
-    color: #f0db4f;
-  }
-  .re{
-    color: #61dafb;
-  }
-  .node{
-    color: #8cc84b;
-  }
-  
-  .skill_content i:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
-  }
-  .dark .skill_content i:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 10px rgba(255, 255, 255, 0.337);
-  }
-  /* Estilos para la lista de habilidades */
-  .skill section {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-  }
-  
-  /* Estilos para los elementos de la lista de habilidades */
-  .skill section li {
-    margin: 5px 0;
-    color: #777;
-  }
-  @keyframes typewriter {
-    from {
-      width: 0; /* Comienza con ancho cero para que parezca que no hay texto */
-    }
-    to {
-      width: 100%; /* Llega al ancho completo mostrando todo el texto */
-    }
-  }
-  
-  /* Aplica la animación "typewriter" al párrafo con la clase .typewriter-text */
-  .skill section li {
-    overflow: hidden; /* Oculta el texto que sale del contenedor */
-    white-space: nowrap;
-    animation: typewriter 4s steps(50) forwards; /* 4s es la duración de la animación */
-    /* "steps(40)" dividirá la animación en 40 pasos, ajusta este número según desees */
-  }
+  display: flex;
+  justify-content: center;
+  height: auto;
+  text-align: center;
+}
+.myskills{
+  width: 100%;
+}
+/* Estilos para el título de habilidades */
 
-  @media (max-width: 577px){
-    .skill_title {
-      margin-top: 120px;
-      font-weight: bold;
-    }
-    
-    .skill_content i {
-      font-size: 60px;
-      padding: 20px;
-      margin: 20px;
-      transition: transform 0.3s ease-in-out;
-    }
-    .skill section {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
-    }
 
-    .skill section li {
-      font-size: 13px;
-      margin: 5px 0;
-      
-    }
-  }
-  @media (min-width:577px) and ( max-width: 768px){
-    .skill_title {
-      margin-top: 120px;
-      font-weight: bold;
-      
-    }
-    
-    .skill_content i {
-      font-size: 70px;
-      padding: 20px;
-      margin: 20px;
-      transition: transform 0.3s ease-in-out;
-    }
-    .skill section {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
-    }
+/* Estilos para el contenedor de íconos */
+.skill_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
 
-    .skill section li {
-      font-size: 14px;
-      margin: 5px 0;
-      
-    }
-  }
-  @media (min-width: 768px) and (max-width: 992px){
-    .skill_title {
-      margin-top: 120px;
-      font-weight: bold;
-      
-    }
-    
-    .skill_content i {
-      font-size: 100px;
-      padding: 20px;
-      margin: 20px;
-      transition: transform 0.3s ease-in-out;
-    }
-    .skill section {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
-    }
+/* Estilos para los íconos */
+.skill_content i {
+  font-size: 120px;
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
+}
 
-    .skill section li {
-      font-size: 15px;
-      margin: 5px 0;
-      
-    }
-  }
-  @media (min-width: 992px)and (max-width: 1200px){
-    .skill_title {
-      margin-top: 120px;
-      font-weight: bold;
-      
-    }
-    
-    .skill_content i {
-      font-size: 120px;
-      padding: 20px;
-      margin: 20px;
-      transition: transform 0.3s ease-in-out;
-    }
-    .skill section {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
-    }
+.js {
+  color: #f0db4f;
+}
 
-    .skill section li {
-      font-size: 20px;
-      margin: 5px 0;
-      
-    }
-  }
-  @media (min-width: 1200px) {
-    .skill_title {
-      font-weight: bold;
-      
-    }
-    
-    .skill_content i {
-      font-size: 120px;
-      padding: 20px;
-      margin: 20px;
-      transition: transform 0.3s ease-in-out;
-    }
-    .skill section {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
-    }
+.re {
+  color: #61dafb;
+}
 
-    .skill section li {
-      font-size: 19px;
-      margin: 5px 0;
-      
-    }
+.node {
+  color: #8cc84b;
+}
+
+.skill_content i:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark .skill_content i:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 10px rgba(255, 255, 255, 0.337);
+}
+
+/* Estilos para la lista de habilidades */
+.skill section {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+
+/* Animación "typewriter" */
+@keyframes typewriter {
+  from {
+    width: 0;
   }
+  to {
+    width: 100%;
+  }
+}
+
+/* Aplica la animación "typewriter" al párrafo con la clase .typewriter-text */
+.skill section li {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 4s steps(50) forwards;
+  /* 4s es la duración de la animación */
+  /* "steps(40)" dividirá la animación en 40 pasos, ajusta este número según desees */
+}

@@ -1,6 +1,5 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-import { NavLink } from 'react-router-dom'
 import "../components/Header.css"
 const Header = ({isDarkMode,handleDarkModeToggle}) => {
    
@@ -13,37 +12,39 @@ const toggleLanguage = () => {
 };
 
     return (
-        <header className='header'>
+        
+<>
+<header className='header'>
   <ul className="header_ul">
     <li className="header_ul_li">
-      <NavLink to="/">
+      <a href="#Home">
         <h3>{t('home')}</h3>
-      </NavLink>
+      </a>
     </li>
     <li className="header_ul_li">
-      <NavLink to="/aboutme">
+      <a href='#aboutMe'>
         <h3>{t('aboutMe')}</h3>
-      </NavLink>
+      </a>
     </li>
     <li className="header_ul_li">
-      <NavLink to="/myskills">
+      <a href="#myskills">
         <h3>{t('mySkills')}</h3>
-      </NavLink>
+      </a>
     </li>
     <li className="header_ul_li">
-      <NavLink to="/experience">
+      <a href="#experience">
         <h3>{t('experience')}</h3>
-      </NavLink>
+      </a>
     </li>
     <li className="header_ul_li">
-      <NavLink to="/projects">
+      <a href="#projects">
         <h3>{t('projects')}</h3>
-      </NavLink>
+      </a>
     </li>
     <li className='header_ul_li'>
-      <NavLink to="contact/">
+      <a href="#contact">
         <h3>{t('contact')}</h3>
-      </NavLink>
+      </a>
     </li>
   </ul>
   <div className="header_content-btn">
@@ -57,10 +58,12 @@ const toggleLanguage = () => {
       className="mi-boton-genial"
       onClick={toggleLanguage}
     >
-      {i18n.language === 'es' ? 'English' : 'Español'}
+      {i18n.language === 'es' ? 'Ingles' : 'Spanish'}
     </button>
   </div>
 </header>
+
+</>
 
     )
 }
