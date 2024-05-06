@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   height: auto;
-  padding: 100px;
 
   @media screen and (max-width: 100%) {
     max-width: 90%;
@@ -17,6 +16,7 @@
 .home_content {
   text-align: center;
   line-height: 1.5;
+  padding-top:200px ;
 }
 
 @keyframes revealImage {

@@ -23,8 +23,8 @@ const CustomAlert = ({  onClose, show }) => {
       <p>{t('home_alert')}</p>
       <button onClick={handleClose}>Cerrar</button>
       <button onClick={() => {
-  handleClose(); // Cierra la alerta antes de redirigir
-  window.location.href = '#contact'; // Cambia la ubicación de la página al destino deseado
+  handleClose(); 
+  window.location.href = '#contact';
 }}>Aceptar</button>
     </div>
   );
