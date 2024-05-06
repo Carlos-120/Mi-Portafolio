@@ -18,14 +18,19 @@
   align-items: center;
   margin: 20px 0;
 }
-
-/* Estilos para los íconos */
 .skill_content i {
   font-size: 120px;
   padding: 20px;
   margin: 20px;
   transition: transform 0.3s ease-in-out;
 }
+@media (min-width: 993px){
+  .skill section li{
+  border-bottom: 1px solid black;
+  width: 400px;
+}
+}
+
 
 .js {
   color: #f0db4f;
@@ -52,7 +57,7 @@
 /* Estilos para la lista de habilidades */
 .skill section {
   list-style: none;
-  padding: 0;
+  padding: 100px;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -70,11 +75,4 @@
   }
 }
 
-/* Aplica la animación "typewriter" al párrafo con la clase .typewriter-text */
-.skill section li {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typewriter 4s steps(50) forwards;
-  /* 4s es la duración de la animación */
-  /* "steps(40)" dividirá la animación en 40 pasos, ajusta este número según desees */
-}
+

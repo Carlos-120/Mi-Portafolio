@@ -6,19 +6,13 @@
   align-items: center;
   height: auto;
   background-size: cover;
-  font-weight: bold;
 }
-
-
 .about_content {
   padding: 30px;
   display: grid;
-  grid-template-columns: auto auto; /* Utiliza 'auto' para que las columnas se ajusten automáticamente */
+  grid-template-columns: auto auto;
   gap: 5px;
 }
-
-/* Otros estilos para .about_content si es necesario */
-
 
 .about_personalizado {
   padding: 40px;
@@ -26,8 +20,6 @@
   font-size: 20px;
   height: auto;
 }
-
-/* Animación "typewriter" */
 @keyframes typewriter {
   from {
     width: 0;
@@ -35,11 +27,6 @@
   to {
     width: 100%;
   }
-}
-
-.typewriter-text {
-  overflow: hidden;
-  animation: typewriter 4s steps(70) forwards;
 }
 
 @media (max-width: 577px) {
@@ -78,8 +65,10 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-
+@media (min-width: 992px)  {
+  .about{
+    padding: 200px;
+  }
   .about_content p {
     font-size: 17px;
   }

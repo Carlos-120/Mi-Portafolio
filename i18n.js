@@ -37,40 +37,38 @@ const resources = {
       // Page 4
       experience: "Experience",
       espe_1: "Work experience",
-      espe_1_1: "In digital technologies none",
+      espe_1_1: "Description",
       espe_1_1_p:
-        "I have had 4 jobs in which I have acquired adaptability, communication, and teamwork skills. I may not have work experience in the digital world but I can adapt quickly because I have the necessary knowledge in web development such as the client and server side, I am prepared to face new technologies and tools for web development",
+        "I have worked in various sectors such as agriculture, construction, mechanics, and garment making. Throughout my career, I have held prominent roles where obedience and ingenuity have been crucial for adapting and working efficiently. I have always carried out my tasks with responsibility, maintaining a light-hearted and graceful demeanor. I believe effective communication, particularly the ability to listen to others, has been key to my performance.",
       espe_2: "Studies",
       espe_2_2_p:
-        "I took a 5-month course as a full stack programmer in which I put into practice certain skills such as teamwork, communication, the ease of solving problems, and optimizing web pages.",
+        "I completed a 5-month full-stack developer program where I honed essential skills such as teamwork, effective communication, problem-solving, and website optimization. Additionally, I independently delved into basic testing concepts in Express, Vue, and React.",
       espe_3: "Goals",
-      espe_3_p_1: "I'm working on personal projects",
+      espe_3_p_1: "I am training as a Backend Developer",
       espe_3_p_2:
-        "I am also studying new tools and frameworks to optimize projects, also delving into unit tests for the proper functioning of my projects.",
-      // Page 5
+        "I will focus on more specific topics and explore new ways to optimize and solve problems, covering areas such as Frameworks, Databases, Security, Software Architecture, Optimization, Automation, and Deployment.",
       projects: "Projects",
       proyect_1_title: "Rick and Morty",
       proyect_1_vista: "Visit",
       proyect_1_detail: "Details",
-      proyect_1_p_1: "Desktop design, navigation between dimensions",
-      proyect_1_p_2: "Search functions by name or number of dimensions",
-      proyect_1_p_3: "The API was manipulated with rest requests",
+      proyect_1_p_1: "Search Engine",
+      proyect_1_p_2: "Rest requests",
+      proyect_1_p_3: "Responsible design",
       //
       proyect_2_title: "Pokédex",
-      proyect_2_p_1: "Desktop design, information interfaces for each pokemon.",
-      proyect_2_p_2: "search by name and history by username",
-      proyect_2_p_3: "show by maginas pokemon lists",
+      proyect_2_p_1: "Search Engine",
+      proyect_2_p_2: "Single factor authentication",
+      proyect_2_p_3: "Paguination",
       //
       proyect_3_title: "Climate",
-      proyect_3_p_1: "Desktop design, use of API",
-      proyect_3_p_2: "Capturing temperature details in real-time",
-      proyect_3_p_3: "Navigation of different climates in different places",
+      proyect_3_p_1: "Search Engine",
+      proyect_3_p_2: "Ambient details",
+      proyect_3_p_3: "Rest requests",
       //
       proyect_4_title: "Movies API",
-      proyect_4_p_1: "Made with firebase, for data storage",
-      proyect_4_p_2: "Documented with swaggerHup, all requests",
-      proyect_4_p_3:
-        "Resfull API, a custom skeleton of my own was also used, for the adjustment of the API",
+      proyect_4_p_1: "Use Firebase",
+      proyect_4_p_2: "Documented with swaggerHup",
+      proyect_4_p_3: "Resfull API",
       // Page 6
       contact: "Contact",
       contact_p: "Copyright © 2023 Juan Carlos",
@@ -81,7 +79,7 @@ const resources = {
       welcome: "¡Bienvenido a mi portafolio!",
       home: "Inicio",
       home_alert:
-        "Hola 👋, si te gusto mi portafolio✨ te invito a contactarme por 📧correo o por 📞whatsapp",
+        "Hola 👋, si te gusto mi portafolio ✨ te invito a contactarme por  📧  correo o por   📞  whatsapp",
       hometitile: "Portafolio",
       homecontent:
         "¡Hola! Soy Carlos, un Desarrollador web apasionado por el diseño y estructura web. Con una formación en Programación full-stack, he desarrollado habilidades sólidas desarrollo en quipo y la comunicación. Me gusta pasar tiempo resolviendo ejercicios de lógica y escuchando música, también estoy abierto a nuevas experiencias ya sean tanto del lado del cliente o del lado del servidor.   ",
@@ -109,42 +107,40 @@ const resources = {
       // paguina 3
       experience: "Experiencia",
       espe_1: "Experiencia laboral",
-      espe_1_1: "En tecnologías digitales ninguno",
+      espe_1_1: "Descripción",
       espe_1_1_p:
-        "He tenido 4 trabajos en los que he adquirido habilidades de adaptabilidad, comunicación y trabajo en equipo. Puede que no tenga experiencia laboral en el mundo digital pero puedo adaptarme rápidamente porque tengo los conocimientos necesarios en desarrollo web como el lado cliente y servidor, estoy preparado para enfrentar nuevas tecnologías y herramientas para el desarrollo web.",
+        "He trabajado en diversos sectores como agricultura, construcción, mecánica y confección. Durante mi trayectoria, he desempeñado roles destacados donde la obediencia y el ingenio han sido fundamentales para adaptarme y trabajar de manera eficiente. Siempre he llevado a cabo mis tareas con responsabilidad, manteniendo un ambiente de humor y gracia. Considero que la comunicación efectiva, especialmente la habilidad para escuchar a los demás, ha sido clave en mi desempeño. ",
       espe_2: "Estudios",
       espe_2_2_p:
-        "Realicé un curso de 5 meses como programador full stack en el que puse en práctica ciertas habilidades como el trabajo en equipo, la comunicación, la facilidad para resolver problemas y la optimización de páginas web.",
+        "Realicé un curso de programación full stack de 5 meses en el que desarrollé y puse en práctica habilidades fundamentales como el trabajo en equipo, la comunicación efectiva, la resolución de problemas y la optimización de páginas web. Además, he profundizado de forma autodidacta en temas de pruebas básicas en Express, Vue y React.",
       espe_3: "Metas",
-      espe_3_p_1: "Estoy trabajando en proyectos personales",
+      espe_3_p_1: "Desarrollándome como programador Backend",
       espe_3_p_2:
-        "También estoy estudiando nuevas herramientas y frameworks para optimizar proyectos, profundizando también en pruebas unitarias para el buen funcionamiento de mis proyectos",
+        "Me centraré en temas más específicos y en nuevas formas de optimizar y resolver problemas, abordando áreas como Frameworks, Bases de Datos, Seguridad, Arquitectura de Software, Optimización, Automatización y Despliegue.",
 
       // paguina 4
       projects: "Proyectos",
       proyect_1_title: "Rick y Morty",
       proyect_1_vista: "Visitar",
       proyect_1_detail: "Detalle",
-      proyect_1_p_1: "Diseño de escritorio, navegación entre dimensiones.",
-      proyect_1_p_2: "Funciones de búsqueda por nombre o número de dimensiones",
-      proyect_1_p_3: "La API fue manipulada con solicitudes Rest",
+      proyect_1_p_1: "Diseño Responsibo.",
+      proyect_1_p_2: "Motor de Busqueda",
+      proyect_1_p_3: "Peticiones Rest",
       //
       proyect_2_title: "Pokedex",
-      proyect_2_p_1:
-        "Diseño de escritorio, interfaces de información para cada pokemon.",
-      proyect_2_p_2: "Duscar por nombre e historial por nombre de usuario",
-      proyect_2_p_3: "mostrar por maginas listas de pokemon",
+      proyect_2_p_1: "Motor de busqueda",
+      proyect_2_p_2: "Autenticación  de un  solo factor",
+      proyect_2_p_3: "Paguinación",
       //
       proyect_3_title: "Clima",
-      proyect_3_p_1: "Diseño de escritorio, uso de API.",
-      proyect_3_p_2: "Captura de detalles de temperatura en tiempo real",
-      proyect_3_p_3: "Navegación de diferentes climas en diferentes lugares",
+      proyect_3_p_1: "Motor de busuqeda",
+      proyect_3_p_2: "Detalles de ambiente",
+      proyect_3_p_3: "Peticiones Rest",
       //
       proyect_4_title: "API de películas",
-      proyect_4_p_1: "Hecho con firebase, para almacenamiento de datos.",
-      proyect_4_p_2: "Documentada con swaggerHup, todas las solicitudes",
-      proyect_4_p_3:
-        "Resfull API, también se utilizó un esqueleto propio y personalizado, para el ajuste de la API.",
+      proyect_4_p_1: "Se uso firebase",
+      proyect_4_p_2: "Documentada con swaggerHup",
+      proyect_4_p_3: "Resfull API",
       // paguina 5
       contact: "Contacto",
       contact_p: "Derechos de autor © 2023  Juan Carlos",
@@ -154,8 +150,8 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: "es", // Idioma por defecto
-  fallbackLng: "es", // Idioma de fallback si la traducción no está disponible
+  lng: "es",
+  fallbackLng: "es",
   interpolation: {
     escapeValue: false,
   },
